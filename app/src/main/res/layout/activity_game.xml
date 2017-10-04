@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pl.michalgajewski.panstwa_miasta.Game">
+
+    <TextView
+        android:id="@+id/letter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Litera na którą bedziesz grał"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <TextView
+        android:id="@+id/textViewState"
+        android:layout_width="101dp"
+        android:layout_height="43dp"
+        android:text="Państwo"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="101dp"
+        android:layout_height="43dp"
+        android:text="Miasto"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteY="164dp"
+        app:layout_constraintRight_toLeftOf="@+id/editTextCity"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewRiver"
+        android:layout_width="101dp"
+        android:layout_height="43dp"
+        android:text="Rzeka"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <TextView
+        android:id="@+id/textViewPlant"
+        android:layout_width="101dp"
+        android:layout_height="43dp"
+        android:text="Roślina"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <TextView
+        android:id="@+id/textViewAniaml"
+        android:layout_width="101dp"
+        android:layout_height="43dp"
+        android:text="Zwierze"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="293dp" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="101dp"
+        android:layout_height="43dp"
+        android:text="Imię"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <TextView
+        android:id="@+id/textViewRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="297dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <TextView
+        android:id="@+id/textViewCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kategoria"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="59dp" />
+
+    <EditText
+        android:id="@+id/editTextState"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <EditText
+        android:id="@+id/editTextCity"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <EditText
+        android:id="@+id/editTextRiver"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <EditText
+        android:id="@+id/editTextPlant"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <EditText
+        android:id="@+id/editTextAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="293dp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <TextView
+        android:id="@+id/textViewUSerAnswers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Twoje odpowiedzi"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="59dp" />
+
+    <TextView
+        android:id="@+id/textViewPointResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Punktacja"
+        tools:layout_editor_absoluteX="319dp"
+        tools:layout_editor_absoluteY="59dp" />
+
+    <TextView
+        android:id="@+id/textVievAnswer1"
+        android:layout_width="64dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="0dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAnswer2"
+        tools:layout_editor_absoluteX="319dp" />
+
+    <TextView
+        android:id="@+id/textViewCountdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do końca rozgrywki pozostało:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="420dp" />
+
+    <TextView
+        android:id="@+id/textViewTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="420dp" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        android:text="Mam wszystkie odpowiedzi"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="465dp" />
+
+    <TextView
+        android:id="@+id/textViewAnswer2"
+        android:layout_width="64dp"
+        android:layout_height="43dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="319dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <TextView
+        android:id="@+id/textViewAnswer3"
+        android:layout_width="64dp"
+        android:layout_height="43dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="319dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <TextView
+        android:id="@+id/textViewAnswer4"
+        android:layout_width="64dp"
+        android:layout_height="43dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="319dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <TextView
+        android:id="@+id/textViewAnswer5"
+        android:layout_width="64dp"
+        android:layout_height="43dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="319dp"
+        tools:layout_editor_absoluteY="293dp" />
+
+    <TextView
+        android:id="@+id/textViewAnswer6"
+        android:layout_width="64dp"
+        android:layout_height="43dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="319dp"
+        tools:layout_editor_absoluteY="336dp" />
+</android.support.constraint.ConstraintLayout>

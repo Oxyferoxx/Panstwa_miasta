@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="editTextStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pl.michalgajewski.panstwa_miasta.MainActivity">
+
+    <EditText
+        android:id="@+id/editTextLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:ems="10"
+        android:hint="Login"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Hasło"
+        android:password="true"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_marginTop="66dp"
+        android:text="Zaloguj" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/buttonLogin"
+        android:layout_marginTop="15dp"
+        android:text="Zarejestruj" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/buttonLogin"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:text="Zapamiętaj" />
+
+    <TextView
+        android:id="@+id/texvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Państwa-Miasta"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

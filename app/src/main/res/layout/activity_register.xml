@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pl.michalgajewski.panstwa_miasta.RegisterActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:id="@+id/editLogin"
+        android:hint="Login" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/editLogin"
+        android:layout_alignRight="@+id/editLogin"
+        android:layout_alignEnd="@+id/editLogin"
+        android:layout_marginTop="14dp"
+        android:id="@+id/editPassword"
+        android:hint="Wpisz hasło" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/editPassword"
+        android:layout_alignRight="@+id/editPassword"
+        android:layout_alignEnd="@+id/editPassword"
+        android:layout_marginTop="25dp"
+        android:id="@+id/editPassword2"
+        android:hint="Powtórz hasło" />
+
+    <Button
+        android:text="Zarejestruj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:id="@+id/buttonRegister"
+        android:layout_below="@+id/editPassword2"
+        android:layout_alignRight="@+id/editPassword2"
+        android:layout_alignEnd="@+id/editPassword2" />
+</RelativeLayout>
+
